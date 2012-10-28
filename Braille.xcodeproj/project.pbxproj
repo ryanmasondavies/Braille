@@ -14,6 +14,9 @@
 		9420AB8B163DBF97007B155E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB78163DBF97007B155E /* Foundation.framework */; };
 		9420AB8E163DBF97007B155E /* libBraille.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB75163DBF97007B155E /* libBraille.a */; };
 		9420ABAB163DBFEA007B155E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9420ABA8163DBFEA007B155E /* InfoPlist.strings */; };
+		9420ABBE163DC355007B155E /* LBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABBD163DC355007B155E /* LBTestViewController.m */; };
+		9420ABC1163DC36F007B155E /* LBTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9420ABC0163DC36F007B155E /* LBTestViewController.xib */; };
+		9420ABC3163DC4B7007B155E /* heisencat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9420ABC2163DC4B7007B155E /* heisencat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		9420AB89163DBF97007B155E /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9420ABA9163DBFEA007B155E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9420ABAA163DBFEA007B155E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		9420ABBC163DC355007B155E /* LBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTestViewController.h; sourceTree = "<group>"; };
+		9420ABBD163DC355007B155E /* LBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTestViewController.m; sourceTree = "<group>"; };
+		9420ABC0163DC36F007B155E /* LBTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBTestViewController.xib; sourceTree = "<group>"; };
+		9420ABC2163DC4B7007B155E /* heisencat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heisencat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9420ABAE163DBFEE007B155E /* Supporting Files */,
+				9420ABC4163DC52A007B155E /* Test Interfaces */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -137,6 +145,17 @@
 				9420ABAA163DBFEA007B155E /* Specs-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9420ABC4163DC52A007B155E /* Test Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9420ABBC163DC355007B155E /* LBTestViewController.h */,
+				9420ABBD163DC355007B155E /* LBTestViewController.m */,
+				9420ABC0163DC36F007B155E /* LBTestViewController.xib */,
+				9420ABC2163DC4B7007B155E /* heisencat.png */,
+			);
+			name = "Test Interfaces";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9420ABAB163DBFEA007B155E /* InfoPlist.strings in Resources */,
+				9420ABC1163DC36F007B155E /* LBTestViewController.xib in Resources */,
+				9420ABC3163DC4B7007B155E /* heisencat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9420ABBE163DC355007B155E /* LBTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
