@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3CA00B9B134D2AB1C8899A /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB91869F9F4615ABC2345A /* libPods-Specs.a */; };
 		9420AB79163DBF97007B155E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB78163DBF97007B155E /* Foundation.framework */; };
 		9420AB88163DBF97007B155E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB87163DBF97007B155E /* SenTestingKit.framework */; };
 		9420AB8A163DBF97007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB89163DBF97007B155E /* UIKit.framework */; };
@@ -38,12 +39,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AFB91869F9F4615ABC2345A /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		9420AB75163DBF97007B155E /* libBraille.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBraille.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9420AB78163DBF97007B155E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9420AB78163DBF97007B155E /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9420AB7C163DBF97007B155E /* Braille-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Braille-Prefix.pch"; sourceTree = "<group>"; };
 		9420AB86163DBF97007B155E /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9420AB87163DBF97007B155E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9420AB89163DBF97007B155E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9420AB87163DBF97007B155E /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9420AB89163DBF97007B155E /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9420ABA9163DBFEA007B155E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9420ABAA163DBFEA007B155E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +68,7 @@
 				9420AB8A163DBF97007B155E /* UIKit.framework in Frameworks */,
 				9420AB8B163DBF97007B155E /* Foundation.framework in Frameworks */,
 				9420AB8E163DBF97007B155E /* libBraille.a in Frameworks */,
+				4F3CA00B9B134D2AB1C8899A /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,7 @@
 				9420ABA7163DBFEA007B155E /* Specs */,
 				9420AB77163DBF97007B155E /* Frameworks */,
 				9420AB76163DBF97007B155E /* Products */,
+				6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,7 @@
 				9420AB78163DBF97007B155E /* Foundation.framework */,
 				9420AB87163DBF97007B155E /* SenTestingKit.framework */,
 				9420AB89163DBF97007B155E /* UIKit.framework */,
+				2AFB91869F9F4615ABC2345A /* libPods-Specs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 				9420AB82163DBF97007B155E /* Frameworks */,
 				9420AB83163DBF97007B155E /* Resources */,
 				9420AB84163DBF97007B155E /* ShellScript */,
+				C8829125115D425D9DBA8696 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +230,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C8829125115D425D9DBA8696 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -336,11 +357,8 @@
 		};
 		9420AB9E163DBF97007B155E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Braille/Braille-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
@@ -351,11 +369,8 @@
 		};
 		9420AB9F163DBF97007B155E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Braille/Braille-Prefix.pch";
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
