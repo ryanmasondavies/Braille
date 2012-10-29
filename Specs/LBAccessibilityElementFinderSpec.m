@@ -46,6 +46,20 @@ describe(@"An accessibility element finder", ^{
         }
     });
     
+    it(@"should search recursively", ^{
+        [view setAccessibilityLabel:@"Add"];
+        [subject setFilter:@{@"label": @"Add"}];
+        
+        NSArray *hierarchy = @[[UIView new], [UIView new], [UIView new]];
+        [hierarchy[2] addSubview:container];
+        [hierarchy[1] addSubview:hierarchy[2]];
+        [hierarchy[0] addSubview:hierarchy[1]];
+        
+        NSArray *results = [subject elementsInView:hierarchy[0]];
+        expect(results).to.haveCountOf(1);
+        expect([results objectAtIndex:0]).to.beIdenticalTo(view);
+    });
+    
     it(@"should filter using an accessibility label", ^{
         [view setAccessibilityLabel:@"Add"];
         [subject setFilter:@{@"label": @"Add"}];

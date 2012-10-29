@@ -20,6 +20,10 @@
     NSNumber *trait = self.filter[@"trait"];
     
     [[view subviews] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
+        NSArray *subviewElements = [self elementsInView:view];
+        if (subviewElements)
+            [elements addObjectsFromArray:subviewElements];
+        
         if (label && ([[view accessibilityLabel] isEqualToString:label] == NO))
             return;
         
