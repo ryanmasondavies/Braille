@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Braille'
-  s.version = '0.0.1'
+  s.version = '0.0.3'
   s.license = 'MIT'
   s.platform = :ios, '6.0'
   s.summary = 'A collection of Objective-C classes and extensions used for finding and handling accessibility elements.'
