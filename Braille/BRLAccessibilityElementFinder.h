@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface BRLAccessibilityElementFinder : NSObject
 @property (strong, nonatomic) NSDictionary *filter;
