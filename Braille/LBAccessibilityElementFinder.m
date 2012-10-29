@@ -14,13 +14,28 @@
 {
     NSMutableArray *elements = [NSMutableArray array];
     
+    NSString *label = self.filter[@"label"];
+    NSString *hint = self.filter[@"hint"];
+    NSString *value = self.filter[@"value"];
+    NSNumber *trait = self.filter[@"trait"];
+    
     [[view subviews] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
-        if ([@([view accessibilityTraits]) isEqualToNumber:self.filter[@"traits"]]) {
-            [elements addObject:view];
-        }
+        if (label && ([[view accessibilityLabel] isEqualToString:label] == NO))
+            return;
+        
+        if (hint && ([[view accessibilityHint] isEqualToString:hint] == NO))
+            return;
+        
+        if (value && ([[view accessibilityValue] isEqualToString:value] == NO))
+            return;
+        
+        if (trait && ([@([view accessibilityTraits]) isEqualToNumber:trait] == NO))
+            return;
+        
+        [elements addObject:view];
     }];
     
-    return [NSArray arrayWithArray:elements];
+    return ([elements count] ? [NSArray arrayWithArray:elements] : nil);
 }
 
 @end
