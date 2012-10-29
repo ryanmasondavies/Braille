@@ -1,5 +1,5 @@
 //
-//  LBAccessibilityElementFinder.h
+//  BRLAccessibilityElementFinder.h
 //  Braille
 //
 //  Created by Ryan Davies on 28/10/2012.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LBAccessibilityElementFinder : NSObject
+@interface BRLAccessibilityElementFinder : NSObject
 @property (strong, nonatomic) NSDictionary *filter;
 - (NSArray *)elementsInView:(UIView *)view;
 @end

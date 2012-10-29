@@ -13,9 +13,9 @@
 		9420AB8B163DBF97007B155E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB78163DBF97007B155E /* Foundation.framework */; };
 		9420AB8E163DBF97007B155E /* libBraille.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB75163DBF97007B155E /* libBraille.a */; };
 		9420ABAB163DBFEA007B155E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9420ABA8163DBFEA007B155E /* InfoPlist.strings */; };
-		9420ABC9163DCDCA007B155E /* LBAccessibilityElementFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABC8163DCDCA007B155E /* LBAccessibilityElementFinderSpec.m */; };
+		9420ABC9163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */; };
 		9420ABCB163DD197007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420ABCA163DD197007B155E /* UIKit.framework */; };
-		9420ABCE163DD1C8007B155E /* LBAccessibilityElementFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABCD163DD1C8007B155E /* LBAccessibilityElementFinder.m */; };
+		9420ABCE163DD1C8007B155E /* BRLAccessibilityElementFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */; };
 		9420ABD0163DD1E2007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420ABCA163DD197007B155E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +51,10 @@
 		9420AB87163DBF97007B155E /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9420ABA9163DBFEA007B155E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9420ABAA163DBFEA007B155E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
-		9420ABC8163DCDCA007B155E /* LBAccessibilityElementFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAccessibilityElementFinderSpec.m; sourceTree = "<group>"; };
+		9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinderSpec.m; sourceTree = "<group>"; };
 		9420ABCA163DD197007B155E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9420ABCC163DD1C8007B155E /* LBAccessibilityElementFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAccessibilityElementFinder.h; sourceTree = "<group>"; };
-		9420ABCD163DD1C8007B155E /* LBAccessibilityElementFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAccessibilityElementFinder.m; sourceTree = "<group>"; };
+		9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLAccessibilityElementFinder.h; sourceTree = "<group>"; };
+		9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 		9420AB7A163DBF97007B155E /* Braille */ = {
 			isa = PBXGroup;
 			children = (
-				9420ABCC163DD1C8007B155E /* LBAccessibilityElementFinder.h */,
-				9420ABCD163DD1C8007B155E /* LBAccessibilityElementFinder.m */,
+				9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */,
+				9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */,
 				9420AB7B163DBF97007B155E /* Supporting Files */,
 			);
 			path = Braille;
@@ -134,7 +134,7 @@
 		9420ABA7163DBFEA007B155E /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				9420ABC8163DCDCA007B155E /* LBAccessibilityElementFinderSpec.m */,
+				9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */,
 				9420ABAE163DBFEE007B155E /* Supporting Files */,
 			);
 			path = Specs;
@@ -195,7 +195,7 @@
 		9420AB6C163DBF97007B155E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LB;
+				CLASSPREFIX = BRL;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Ryan Davies";
 			};
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9420ABCE163DD1C8007B155E /* LBAccessibilityElementFinder.m in Sources */,
+				9420ABCE163DD1C8007B155E /* BRLAccessibilityElementFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9420ABC9163DCDCA007B155E /* LBAccessibilityElementFinderSpec.m in Sources */,
+				9420ABC9163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

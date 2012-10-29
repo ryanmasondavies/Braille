@@ -1,14 +1,14 @@
 //
-//  LBAccessibilityElementFinder.m
+//  BRLAccessibilityElementFinder.m
 //  Braille
 //
 //  Created by Ryan Davies on 28/10/2012.
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#import "LBAccessibilityElementFinder.h"
+#import "BRLAccessibilityElementFinder.h"
 
-@implementation LBAccessibilityElementFinder
+@implementation BRLAccessibilityElementFinder
 
 - (NSArray *)elementsInView:(UIView *)view
 {

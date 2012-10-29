@@ -1,5 +1,5 @@
 //
-//  LBAccessibilityElementFinderSpec.m
+//  BRLAccessibilityElementFinderSpec.m
 //  Braille
 //
 //  Created by Ryan Davies on 28/10/2012.
@@ -10,14 +10,14 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
 
-#import "LBAccessibilityElementFinder.h"
+#import "BRLAccessibilityElementFinder.h"
 
-SpecBegin(LBAccessibilityElementFinder)
+SpecBegin(BRLAccessibilityElementFinder)
 
-__block LBAccessibilityElementFinder *subject;
+__block BRLAccessibilityElementFinder *subject;
 
 before(^{
-    subject = [[LBAccessibilityElementFinder alloc] init];
+    subject = [[BRLAccessibilityElementFinder alloc] init];
 });
 
 describe(@"An accessibility element finder", ^{
