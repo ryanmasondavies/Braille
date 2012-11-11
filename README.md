@@ -13,3 +13,8 @@ For example, in order to find an accessibility element labelled 'Add' (the defau
     UIBarButtonItem *addButton = [elements objectAtIndex:0];
 
 This library is very much a work in progress, and so the API may be subject to potentially drastic change and simplification.
+
+License
+=======
+
+This project is available under the MIT license. See the LICENSE file for details.
