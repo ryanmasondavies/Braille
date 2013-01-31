@@ -14,8 +14,9 @@
 		9420AB8E163DBF97007B155E /* libBraille.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB75163DBF97007B155E /* libBraille.a */; };
 		9420ABC9163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */; };
 		9420ABCB163DD197007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420ABCA163DD197007B155E /* UIKit.framework */; };
-		9420ABCE163DD1C8007B155E /* BRLAccessibilityElementFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */; };
+		9420ABCE163DD1C8007B155E /* UIView+BRLAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABCD163DD1C8007B155E /* UIView+BRLAccessibility.m */; };
 		9420ABD0163DD1E2007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420ABCA163DD197007B155E /* UIKit.framework */; };
+		9482A6DC16BAE31F00EE637A /* BRLViewAccessibilitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9482A6DB16BAE31F00EE637A /* BRLViewAccessibilitySpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,11 @@
 		9420ABAA163DBFEA007B155E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinderSpec.m; sourceTree = "<group>"; };
 		9420ABCA163DD197007B155E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLAccessibilityElementFinder.h; sourceTree = "<group>"; };
-		9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinder.m; sourceTree = "<group>"; };
+		9420ABCC163DD1C8007B155E /* UIView+BRLAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BRLAccessibility.h"; sourceTree = "<group>"; };
+		9420ABCD163DD1C8007B155E /* UIView+BRLAccessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BRLAccessibility.m"; sourceTree = "<group>"; };
 		9482A6D516BAC07800EE637A /* BRLSpecHelper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRLSpecHelper.pch; sourceTree = "<group>"; };
 		9482A6D616BAC0A200EE637A /* Braille.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Braille.h; sourceTree = "<group>"; };
+		9482A6DB16BAE31F00EE637A /* BRLViewAccessibilitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLViewAccessibilitySpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				9482A6D616BAC0A200EE637A /* Braille.h */,
-				9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */,
-				9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */,
+				9420ABCC163DD1C8007B155E /* UIView+BRLAccessibility.h */,
+				9420ABCD163DD1C8007B155E /* UIView+BRLAccessibility.m */,
 				9420AB7B163DBF97007B155E /* Supporting Files */,
 			);
 			path = Braille;
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */,
+				9482A6DB16BAE31F00EE637A /* BRLViewAccessibilitySpec.m */,
 				9420ABAE163DBFEE007B155E /* Supporting Files */,
 			);
 			path = Specs;
@@ -263,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9420ABCE163DD1C8007B155E /* BRLAccessibilityElementFinder.m in Sources */,
+				9420ABCE163DD1C8007B155E /* UIView+BRLAccessibility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9420ABC9163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m in Sources */,
+				9482A6DC16BAE31F00EE637A /* BRLViewAccessibilitySpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
