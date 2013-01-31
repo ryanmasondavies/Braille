@@ -1,14 +1,17 @@
 
 PODS:
 - Expecta (0.2.0)
-- Specta (0.1.6)
+- Inline (0.1.0)
+- Specify (0.0.2):
+  - Inline
 
 DEPENDENCIES:
 - Expecta
-- Specta
+- Specify
 
 SPEC CHECKSUMS:
   Expecta: 1521da8c54c253277d5fae673f516c76ed838bc7
-  Specta: ec7e1ce376442fc26b927dbc517c90e36232cde6
+  Inline: f1af4456f99b23bbc9525c9ed1986edbe852e862
+  Specify: dde17eac50fae44e35498d2436c28dc7b451c783
 
-COCOAPODS: 0.15.2
+COCOAPODS: 0.16.1

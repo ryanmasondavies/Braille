@@ -12,7 +12,6 @@
 		9420AB88163DBF97007B155E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB87163DBF97007B155E /* SenTestingKit.framework */; };
 		9420AB8B163DBF97007B155E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB78163DBF97007B155E /* Foundation.framework */; };
 		9420AB8E163DBF97007B155E /* libBraille.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420AB75163DBF97007B155E /* libBraille.a */; };
-		9420ABAB163DBFEA007B155E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9420ABA8163DBFEA007B155E /* InfoPlist.strings */; };
 		9420ABC9163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */; };
 		9420ABCB163DD197007B155E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9420ABCA163DD197007B155E /* UIKit.framework */; };
 		9420ABCE163DD1C8007B155E /* BRLAccessibilityElementFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */; };
@@ -49,12 +48,13 @@
 		9420AB7C163DBF97007B155E /* Braille-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Braille-Prefix.pch"; sourceTree = "<group>"; };
 		9420AB86163DBF97007B155E /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9420AB87163DBF97007B155E /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9420ABA9163DBFEA007B155E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9420ABAA163DBFEA007B155E /* Specs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		9420ABC8163DCDCA007B155E /* BRLAccessibilityElementFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinderSpec.m; sourceTree = "<group>"; };
 		9420ABCA163DD197007B155E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLAccessibilityElementFinder.h; sourceTree = "<group>"; };
 		9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLAccessibilityElementFinder.m; sourceTree = "<group>"; };
+		9482A6D516BAC07800EE637A /* BRLSpecHelper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRLSpecHelper.pch; sourceTree = "<group>"; };
+		9482A6D616BAC0A200EE637A /* Braille.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Braille.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 		9420AB7A163DBF97007B155E /* Braille */ = {
 			isa = PBXGroup;
 			children = (
+				9482A6D616BAC0A200EE637A /* Braille.h */,
 				9420ABCC163DD1C8007B155E /* BRLAccessibilityElementFinder.h */,
 				9420ABCD163DD1C8007B155E /* BRLAccessibilityElementFinder.m */,
 				9420AB7B163DBF97007B155E /* Supporting Files */,
@@ -143,7 +144,7 @@
 		9420ABAE163DBFEE007B155E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9420ABA8163DBFEA007B155E /* InfoPlist.strings */,
+				9482A6D516BAC07800EE637A /* BRLSpecHelper.pch */,
 				9420ABAA163DBFEA007B155E /* Specs-Info.plist */,
 			);
 			name = "Supporting Files";
@@ -222,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9420ABAB163DBFEA007B155E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,22 +285,10 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		9420ABA8163DBFEA007B155E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9420ABA9163DBFEA007B155E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		9420AB98163DBF97007B155E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -327,7 +315,6 @@
 		9420AB99163DBF97007B155E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -373,7 +360,7 @@
 			baseConfigurationReference = 6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Braille/Braille-Prefix.pch";
+				GCC_PREFIX_HEADER = Specs/BRLSpecHelper.pch;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -385,7 +372,7 @@
 			baseConfigurationReference = 6B54DF0DC3F443C09E1A0FB9 /* Pods-Specs.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Braille/Braille-Prefix.pch";
+				GCC_PREFIX_HEADER = Specs/BRLSpecHelper.pch;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;

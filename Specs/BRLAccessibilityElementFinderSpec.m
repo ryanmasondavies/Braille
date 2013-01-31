@@ -6,12 +6,6 @@
 //  Copyright (c) 2012 Ryan Davies. All rights reserved.
 //
 
-#define EXP_SHORTHAND
-#import <Expecta/Expecta.h>
-#import <Specta/Specta.h>
-
-#import "BRLAccessibilityElementFinder.h"
-
 SpecBegin(BRLAccessibilityElementFinder)
 
 __block BRLAccessibilityElementFinder *subject;
