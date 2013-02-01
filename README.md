@@ -1,7 +1,7 @@
 Braille
 =======
 
-A collection of Objective-C classes and extensions used for finding accessibility elements.
+UIView extension for finding accessibility elements.
 
 Within a view hierarchy, views can be retrieved based on their accessibility properties.
 
@@ -10,8 +10,15 @@ For example, in order to find an accessibility element labelled 'Add' (the defau
     NSArray *elements = [[self view] viewsWithAccessibilityLabel:@"Add"];
     UIView *addButton = [elements objectAtIndex:0];
 
+See UIView+BRLAccessibility.h for the full list of methods.
+
+Installation
+------------
+
+Braille can be installed with [CocoaPods](https://github.com/CocoaPods/CocoaPods). Just add `pod 'Braille'` to your Podfile.
+
 License
-=======
+-------
 
 Copyright (c) 2012 Ryan Davies
 
