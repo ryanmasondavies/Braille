@@ -32,4 +32,28 @@ describe(@"-accessibilityElementsWithLabel:", ^{
     });
 });
 
+describe(@"-accessibilityElementsWithLabel:hint:", ^{
+    it(@"should recursively search for views based on an accessibility label and hint", ^{
+        [targetView setAccessibilityLabel:@"test"];
+        [targetView setAccessibilityHint:@"hint"];
+        expect([rootView accessibilityElementsWithLabel:@"test" hint:@"hint"]).to.contain(targetView);
+    });
+});
+
+describe(@"-accessibilityElementWithLabel:value:", ^{
+    it(@"should recursively search for views based on an accessibility label and value", ^{
+        [targetView setAccessibilityLabel:@"test"];
+        [targetView setAccessibilityValue:@"value"];
+        expect([rootView accessibilityElementsWithLabel:@"test" value:@"value"]).to.contain(targetView);
+    });
+});
+
+describe(@"-accessibilityElementWithLabel:traits:", ^{
+    it(@"should recursively search for views based on an accessibility label and traits", ^{
+        [targetView setAccessibilityLabel:@"test"];
+        [targetView setAccessibilityTraits:UIAccessibilityTraitAdjustable];
+        expect([rootView accessibilityElementsWithLabel:@"test" traits:UIAccessibilityTraitAdjustable]).to.contain(targetView);
+    });
+});
+
 SpecEnd

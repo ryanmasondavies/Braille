@@ -41,4 +41,19 @@
     return [self nestedViewsWithValues:@[label] forKeys:@[@"accessibilityLabel"]];
 }
 
+- (NSArray *)accessibilityElementsWithLabel:(NSString *)label hint:(NSString *)hint
+{
+    return [self nestedViewsWithValues:@[label, hint] forKeys:@[@"accessibilityLabel", @"accessibilityHint"]];
+}
+
+- (NSArray *)accessibilityElementsWithLabel:(NSString *)label value:(NSString *)value
+{
+    return [self nestedViewsWithValues:@[label, value] forKeys:@[@"accessibilityLabel", @"accessibilityValue"]];
+}
+
+- (NSArray *)accessibilityElementsWithLabel:(NSString *)label traits:(UIAccessibilityTraits)traits
+{
+    return [self nestedViewsWithValues:@[label, @(traits)] forKeys:@[@"accessibilityLabel", @"accessibilityTraits"]];
+}
+
 @end
