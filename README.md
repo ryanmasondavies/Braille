@@ -15,7 +15,7 @@ See UIView+BRLAccessibility.h for the full list of methods.
 Installation
 ------------
 
-Braille can be installed with [CocoaPods](https://github.com/CocoaPods/CocoaPods). Just add `pod 'Braille'` to your Podfile.
+Braille can be installed with [CocoaPods](https://github.com/CocoaPods/CocoaPods). Just add `pod 'Braille', '~> 0.1.0'` to your Podfile.
 
 License
 -------
