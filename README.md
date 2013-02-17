@@ -13,12 +13,12 @@ For example, in order to find an accessibility element labelled 'Add' (the defau
 See UIView+BRLAccessibility.h for the full list of methods.
 
 Installation
-------------
+============
 
-Braille can be installed with [CocoaPods](https://github.com/CocoaPods/CocoaPods). Just add `pod 'Braille', '~> 0.1.0'` to your Podfile.
+Braille can be installed with [CocoaPods](https://github.com/CocoaPods/CocoaPods) by adding `pod 'Braille', '~> 0.1.0'` to your Podfile.
 
 License
--------
+=======
 
     Copyright (c) 2013 Ryan Davies
     
