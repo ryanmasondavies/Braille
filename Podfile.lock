@@ -1,17 +1,24 @@
-
 PODS:
-- Expecta (0.2.0)
-- Inline (0.1.0)
-- Specify (0.0.2):
-  - Inline
+  - Expecta (0.2.0)
+  - Inline (0.1.0)
+  - Specify (0.0.2):
+    - Inline (~> 0.1.0)
 
 DEPENDENCIES:
-- Expecta
-- Specify
+  - Expecta
+  - Specify
+
+SPEC REPOS:
+  trunk:
+    - Expecta
+    - Inline
+    - Specify
 
 SPEC CHECKSUMS:
-  Expecta: 1521da8c54c253277d5fae673f516c76ed838bc7
-  Inline: f1af4456f99b23bbc9525c9ed1986edbe852e862
-  Specify: dde17eac50fae44e35498d2436c28dc7b451c783
+  Expecta: ceaaf0e6d992f9b213e3ec16041f4567a6ab198e
+  Inline: 958bbcb3f5053e05918fc2b882de8007ce24e40e
+  Specify: f07fa285d211363f4c6f5c92035da546592f8e21
 
-COCOAPODS: 0.16.1
+PODFILE CHECKSUM: 00e8e61ca6ea0853bf718e981e90d8b9a7c2857f
+
+COCOAPODS: 1.9.1
